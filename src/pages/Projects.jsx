@@ -19,6 +19,7 @@ const Projects = () => {
             description={project.description}
             tech={project.tech}
             highlight={project.highlight}
+            icon={project.icon}
           />
         ))}
       </div>
