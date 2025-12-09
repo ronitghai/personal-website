@@ -127,7 +127,7 @@ const Home = () => {
           <div className="card">
             <h2 className="card-title">Languages</h2>
             <p className="card-body">
-              Python, JavaScript, TypeScript, C, C++, Swift, SQL, HTML/CSS.
+              Python, Java, JavaScript, TypeScript, C, C++, Swift, SQL, HTML/CSS.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ const Home = () => {
             <h2 className="card-title">Cloud & AI</h2>
             <p className="card-body">
               AWS, Azure, GCP, Terraform, REST APIs, LLMs, LangChain, TensorFlow,
-              PyTorch, scikit-learn, PostgreSQL, MongoDB.
+              PyTorch, Pandas, PostgreSQL, MongoDB.
             </p>
           </div>
         </div>

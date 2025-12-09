@@ -1,3 +1,5 @@
+import voyagerLogo from '../assets/voyager-logo.png'
+
 export const projects = [
   {
     name: 'File Integrity Verification System',
@@ -17,6 +19,7 @@ export const projects = [
   },
   {
     name: 'Voyager Pro — Smart Suitcase',
+    icon: voyagerLogo,
     description:
       'GPS-enabled smart suitcase with weight tracking accurate to ±0.5 kg and BLE/WiFi-based iOS companion app. ESP32 firmware handles weight measurements, geofence alerts, and secure communication, while the SwiftUI iOS app displays real-time weight and location. Custom PCBs integrate load cells, HX711 amplifiers, and GPS modules.',
     tech: ['SwiftUI', 'ESP32', 'Arduino', 'KiCAD', 'C', 'C++', 'Google Maps API'],
@@ -26,7 +29,7 @@ export const projects = [
     name: 'A.L.T.R.O.N. — AI Personal Assistant',
     description:
       'Desktop assistant in Python that manages tasks, reminders, and notes through a conversational UI. Uses SpaCy for NLP, SQLite for persistence, gTTS for voice responses, and Google Generative AI (Gemini) for J.A.R.V.I.S-like conversations. Can also trigger Google searches and open results in the browser.',
-    tech: ['Python', 'SpaCy', 'SQLite', 'gTTS', 'Tkinter', 'Google Generative AI'],
+    tech: ['Python', 'SpaCy', 'SQLite', 'gTTS', 'Tkinter', 'Google Gemini LLM'],
     highlight: 'Gen AI · Desktop',
   },
   {
