@@ -1,6 +1,28 @@
 import React from 'react'
 import SectionHeader from '../components/SectionHeader'
 import { projects } from '../data/projects'
+import ProjectCard from '../components/ProjectCard'
+
+import logoPython from '../assets/logos/python.png'
+import logoJS from '../assets/logos/JS.png'
+import logoReact from '../assets/logos/react.png'
+import logoFastAPI from '../assets/logos/FastAPI.png'
+import logoDocker from '../assets/logos/docker.png'
+import logoAWS from '../assets/logos/aws.png'
+import logoAzure from '../assets/logos/azure.png'
+import logoPostgres from '../assets/logos/postgres.png'
+import logoSwift from '../assets/logos/swift.png'
+import logoArduino from '../assets/logos/arduino.png'
+import logoGit from '../assets/logos/git.png'
+import logoJava from '../assets/logos/Java.svg'
+import logoGCP from '../assets/logos/GCP.png'
+import logoKicad from '../assets/logos/kicad.png'
+import logoTS from '../assets/logos/TS.png'
+import logoPostman from '../assets/logos/postman.svg'
+import logoC from '../assets/logos/C.png'
+import logoCPP from '../assets/logos/CPP.jpg'
+import logoFlutter from '../assets/logos/Flutter.png'
+import logoSQL from '../assets/logos/sql.jpeg'
 
 const Home = () => {
   // Smooth scroll helper for HashRouter
@@ -13,12 +35,36 @@ const Home = () => {
 
   const featured = projects.slice(0, 2)
 
+    // Logos to animate in the strip (use only the ones you imported)
+  const techLogos = [
+    { src: logoPython, alt: 'Python' },
+    { src: logoJS, alt: 'JavaScript' },
+    { src: logoReact, alt: 'React' },
+    { src: logoFastAPI, alt: 'FastAPI' },
+    { src: logoDocker, alt: 'Docker' },
+    { src: logoAWS, alt: 'AWS' },
+    { src: logoAzure, alt: 'Azure' },
+    { src: logoPostgres, alt: 'PostgreSQL' },
+    { src: logoJava, alt: 'Java' },
+    { src: logoSwift, alt: 'Swift' },
+    { src: logoArduino, alt: 'Arduino' },
+    { src: logoGCP, alt: 'GCP' },
+    { src: logoGit, alt: 'Git' },
+    { src: logoC, alt: 'C' },
+    { src: logoCPP, alt: 'CPP' },
+    { src: logoKicad, alt: 'KiCAD' },
+    { src: logoSQL, alt: 'SQL' },
+    { src: logoTS, alt: 'TypeScript' },
+    { src: logoPostman, alt: 'Postman' },
+    { src: logoFlutter, alt: 'Flutter' },
+  ]
+
   return (
     <div className="page-container">
       {/* ================= HERO ================= */}
       <div className="hero-grid">
         <section>
-          <p className="hero-role">SOFTWARE · CLOUD · AI</p>
+          <p className="hero-role">SOFTWARE · CLOUD · AI · EMBEDDED </p>
 
           <h1 className="hero-name">
             Hi, I&apos;m <span className="hero-gradient">Ronit Ghai</span>.
@@ -76,7 +122,7 @@ const Home = () => {
 
           <div className="hero-pill-row">
             <span className="pill pill-strong">React · FastAPI · Azure · AWS</span>
-            <span className="pill">Python · TypeScript · SQL</span>
+            <span className="pill">Python · Gen AI · SQL</span>
             <span className="pill">ESP32 · SwiftUI · FPGA</span>
           </div>
         </aside>
@@ -91,25 +137,15 @@ const Home = () => {
         />
 
         <div className="grid grid-2">
-          {featured.map((p) => (
-            <div key={p.name} className="card">
-              <div className="card-header-row">
-                <div>
-                  <h2 className="card-title">{p.name}</h2>
-                  {p.highlight && <p className="card-subtitle">{p.highlight}</p>}
-                </div>
-              </div>
-
-              <p className="card-body">{p.description}</p>
-
-              <div className="card-tags">
-                {p.tech.slice(0, 5).map((t) => (
-                  <span key={t} className="card-tag">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
+          {featured.map((project) => (
+            <ProjectCard
+               key={project.name}
+               name={project.name}
+               description={project.description}
+               tech={project.tech}
+               highlight={project.highlight}
+               icon={project.icon}  
+            />
           ))}
         </div>
       </section>
@@ -147,6 +183,26 @@ const Home = () => {
               AWS, Azure, GCP, Terraform, REST APIs, LLMs, LangChain, TensorFlow,
               PyTorch, Pandas, PostgreSQL, MongoDB.
             </p>
+          </div>
+        </div>
+      </section>
+            {/* ================= TECH LOGO STRIP ================= */}
+      <section className="tech-strip-wrapper">
+        <div className="tech-strip-label">
+          Tools & Platforms 
+        </div>
+        <div className="tech-strip">
+          <div className="tech-strip-track">
+            {[...techLogos, ...techLogos].map((item, index) => (
+              <div key={`${item.alt}-${index}`} className="tech-strip-item">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="tech-strip-icon"
+                  title={item.alt}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

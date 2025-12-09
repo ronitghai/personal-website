@@ -564,3 +564,65 @@ a {
 .muted {
   color: var(--text-muted);
 }
+
+/* ================= TECH STRIP (animated logos) ================= */
+
+.tech-strip-wrapper {
+  margin-top: 3.5rem;
+  padding: 1.5rem 0 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.tech-strip-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.tech-strip {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-strip-track {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  animation: tech-strip-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.tech-strip-item {
+  flex: 0 0 auto;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tech-strip-item:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.tech-strip-icon {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Make it a bit smaller on small screens */
+@media (max-width: 600px) {
+  .tech-strip-icon {
+    height: 26px;
+  }
+}
+
+@keyframes tech-strip-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
