@@ -7,7 +7,7 @@ const Contact = () => {
       <SectionHeader
         eyebrow="Contact"
         title="Let’s get in touch"
-        subtitle="I’m open to full-time roles, interesting problems, and collaborations in cloud, AI, and systems work."
+        subtitle="I’m open to full-time roles, interesting problems, and collaborations in firmware, cloud, AI, and application work."
       />
 
       <div className="contact-grid">

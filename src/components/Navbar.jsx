@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="nav-logo">RG</div>
           <div className="nav-title">
             <span className="nav-name">Ronit Ghai</span>
-            <span className="nav-role">Software · Cloud · AI</span>
+            <span className="nav-role">Software · AI · Cloud · Embedded</span>
           </div>
         </div>
         <nav className="nav-links">

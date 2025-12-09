@@ -626,3 +626,40 @@ a {
     transform: translateX(-50%);
   }
 }
+
+/* ================= EXPERIENCE & EDUCATION HEADER ================= */
+
+.exp-header,
+.edu-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  gap: 1rem;
+}
+
+.exp-left,
+.edu-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.exp-year,
+.edu-year {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+
+.exp-bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.86rem;
+  color: #e5e7eb;
+}
+
+.exp-bullets li {
+  margin-bottom: 0.25rem;
+}

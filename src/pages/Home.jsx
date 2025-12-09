@@ -171,7 +171,7 @@ const Home = () => {
           <div className="card">
             <h2 className="card-title">Frameworks & Tools</h2>
             <p className="card-body">
-              React, Vue, Next.js, Node.js, Express, FastAPI, Flask, Django, Tailwind,
+              React, Node.js, Express, FastAPI, Flask, Django, Tailwind,
               Docker, Git, Postman.
             </p>
           </div>
@@ -180,7 +180,7 @@ const Home = () => {
           <div className="card">
             <h2 className="card-title">Cloud & AI</h2>
             <p className="card-body">
-              AWS, Azure, GCP, Terraform, REST APIs, LLMs, LangChain, TensorFlow,
+              AWS, Azure, GCP, REST APIs, LLMs, LangChain, TensorFlow,
               PyTorch, Pandas, PostgreSQL, MongoDB.
             </p>
           </div>

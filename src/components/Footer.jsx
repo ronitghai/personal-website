@@ -22,7 +22,6 @@ const Footer = () => {
           >
             GitHub
           </a>
-          <span className="footer-link">Built with React + Vite</span>
         </div>
       </div>
     </footer>
