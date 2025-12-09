@@ -10,8 +10,8 @@ const ProjectCard = ({ name, role, description, tech, highlight, icon }) => {
               src={icon}
               alt={name}
               style={{
-                width: '36px',
-                height: '36px',
+                width: '40px',
+                height: '40px',
                 objectFit: 'contain',
                 borderRadius: '8px',
               }}
@@ -19,11 +19,9 @@ const ProjectCard = ({ name, role, description, tech, highlight, icon }) => {
           )}
           <div>
             <h2 className="card-title">{name}</h2>
-            {role && <p className="card-subtitle">{role}</p>}
+            {highlight && <p className="card-subtitle">{highlight}</p>}
           </div>
         </div>
-
-        {highlight && <span className="card-chip">{highlight}</span>}
       </div>
 
       <p className="card-body">{description}</p>
