@@ -145,6 +145,7 @@ const Home = () => {
                tech={project.tech}
                highlight={project.highlight}
                icon={project.icon}  
+               video={project.video}
             />
           ))}
         </div>

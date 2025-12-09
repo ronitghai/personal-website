@@ -20,6 +20,7 @@ export const projects = [
   {
     name: 'Voyager Pro — Smart Suitcase',
     icon: voyagerLogo,
+    video: "0sg-tGyp5Q8",
     description:
       'GPS-enabled smart suitcase with weight tracking accurate to ±0.5 kg and BLE/WiFi-based iOS companion app. ESP32 firmware handles weight measurements, geofence alerts, and secure communication, while the SwiftUI iOS app displays real-time weight and location. Custom PCBs integrate load cells, HX711 amplifiers, and GPS modules.',
     tech: ['SwiftUI', 'ESP32', 'Arduino', 'KiCAD', 'C', 'C++', 'Google Maps API'],

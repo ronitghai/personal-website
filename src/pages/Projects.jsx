@@ -20,6 +20,7 @@ const Projects = () => {
             tech={project.tech}
             highlight={project.highlight}
             icon={project.icon}
+            video={project.video}
           />
         ))}
       </div>
