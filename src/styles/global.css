@@ -1,15 +1,17 @@
+
 :root {
-  --bg-gradient: radial-gradient(circle at top, #3b1d5a 0%, #05030a 45%, #020009 100%);
-  --card-bg: rgba(15, 12, 32, 0.9);
-  --card-border: rgba(120, 82, 255, 0.4);
-  --accent: #a855ff;
-  --accent-soft: rgba(168, 85, 255, 0.2);
-  --text-main: #f9fafb;
-  --text-muted: #9ca3af;
-  --nav-bg: rgba(5, 5, 15, 0.9);
-  --border-subtle: rgba(55, 65, 81, 0.6);
-  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+  --bg-gradient: #080811;
+  --card-bg: rgba(17, 17, 34, 0.9);
+  --card-border: rgba(167, 139, 250, 0.2);
+  --accent: #a78bfa;
+  --accent-soft: rgba(167, 139, 250, 0.12);
+  --text-main: #f5f3ff;
+  --text-muted: #a4a4bb;
+  --nav-bg: rgba(8, 8, 17, 0.95);
+  --border-subtle: rgba(167, 139, 250, 0.16);
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.25);
 }
+
 
 *,
 *::before,

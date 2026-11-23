@@ -1,6 +1,23 @@
+
 import voyagerLogo from '../assets/voyager-logo.png'
 
 export const projects = [
+  {
+    name: 'Smart Financial Coach',
+    description:
+      'An AI-powered financial analytics platform that processes transaction data, identifies spending patterns, forecasts financial trends, and generates personalized action plans.',
+    tech: [
+      'Python',
+      'React',
+      'FastAPI',
+      'SQLite',
+      'OpenAI API',
+    ],
+    highlight: '1,000+ transactions processed',
+    category: 'AI & Software',
+    visual: 'finance',
+    slug: 'smart-financial-coach',
+  },
   {
     name: 'File Integrity Verification System',
     description:
@@ -16,28 +33,64 @@ export const projects = [
       'Swagger UI',
     ],
     highlight: 'Cloud · Security',
+    category: 'Cloud & Security',
+    visual: 'security',
+    slug: 'file-integrity-verification',
   },
   {
     name: 'Voyager Pro — Smart Suitcase',
     icon: voyagerLogo,
-    video: "0sg-tGyp5Q8",
+    video: '0sg-tGyp5Q8',
     description:
       'GPS-enabled smart suitcase with weight tracking accurate to ±0.5 kg and BLE/WiFi-based iOS companion app. ESP32 firmware handles weight measurements, geofence alerts, and secure communication, while the SwiftUI iOS app displays real-time weight and location. Custom PCBs integrate load cells, HX711 amplifiers, and GPS modules.',
-    tech: ['SwiftUI', 'ESP32', 'Arduino', 'KiCAD', 'C', 'C++', 'Google Maps API'],
+    tech: [
+      'SwiftUI',
+      'ESP32',
+      'Arduino',
+      'KiCAD',
+      'C',
+      'C++',
+      'Google Maps API',
+    ],
     highlight: 'Embedded · iOS',
+    category: 'Embedded & IoT',
+    visual: 'voyager',
+    slug: 'voyager-pro',
   },
   {
     name: 'A.L.T.R.O.N. — AI Personal Assistant',
     description:
       'Desktop assistant in Python that manages tasks, reminders, and notes through a conversational UI. Uses SpaCy for NLP, SQLite for persistence, gTTS for voice responses, and Google Generative AI (Gemini) for J.A.R.V.I.S-like conversations. Can also trigger Google searches and open results in the browser.',
-    tech: ['Python', 'SpaCy', 'SQLite', 'gTTS', 'Tkinter', 'Google Gemini LLM'],
+    tech: [
+      'Python',
+      'SpaCy',
+      'SQLite',
+      'gTTS',
+      'Tkinter',
+      'Google Gemini LLM',
+    ],
     highlight: 'Gen AI · Desktop',
+    category: 'AI & Software',
+    visual: 'terminal',
+    slug: 'altron-ai-assistant',
   },
   {
     name: 'Fault Injection on AES-Encrypted ATMega328P',
     description:
       'Hardware and firmware pipeline to induce precise faults on AES-encrypted firmware running on an ATMega328P, first using FPGA hardware then ported to RP2040. Designed attacker and victim firmware in C/C++, built custom PCBs in KiCAD, synthesized hardware on a Zynq-7000 with Vivado, and used Python scripts to perform differential analysis and recover the AES key from limited traces.',
-    tech: ['Python', 'C', 'C++', 'RP2040', 'FPGA', 'Zynq-7000', 'KiCAD', 'Vivado'],
+    tech: [
+      'Python',
+      'C',
+      'C++',
+      'RP2040',
+      'FPGA',
+      'Zynq-7000',
+      'KiCAD',
+      'Vivado',
+    ],
     highlight: 'Hardware · Crypto',
+    category: 'Embedded & IoT',
+    visual: 'circuit',
+    slug: 'aes-fault-injection',
   },
 ]

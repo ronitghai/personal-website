@@ -1,0 +1,188 @@
+
+/* VOYAGER PRO CASE STUDY */
+
+.voyager-preview {
+  padding: 24px;
+  border: 1px solid rgba(167, 139, 250, .22);
+  border-radius: 16px;
+  background: #101323;
+}
+
+.voyager-preview .pv-frame {
+  width: min(100%, 650px);
+  min-height: 245px;
+  margin: 0 auto;
+}
+
+.voyager-screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.voyager-screen-card {
+  min-width: 0;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(167, 139, 250, .2);
+  border-radius: 14px;
+  background: #121426;
+}
+
+.voyager-screen-card img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.voyager-screen-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.voyager-screen-card strong {
+  color: #f5f3ff;
+  font-size: 16px;
+}
+
+.voyager-screen-card figcaption span {
+  color: #a4a4bb;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.voyager-architecture {
+  padding: 30px;
+  border: 1px solid rgba(167, 139, 250, .2);
+  border-radius: 16px;
+  background: #101323;
+}
+
+.voyager-architecture-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.voyager-architecture-node {
+  padding: 25px;
+  border: 1px solid rgba(167, 139, 250, .28);
+  border-radius: 11px;
+  background: #191a30;
+  text-align: center;
+}
+
+.voyager-architecture-node span {
+  display: block;
+  margin-bottom: 12px;
+  color: #67e8f9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.voyager-architecture-node strong {
+  color: #f5f3ff;
+  font-size: 20px;
+}
+
+.voyager-architecture-node p {
+  margin: 12px 0 0;
+  color: #a4a4bb;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.voyager-architecture-center {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.voyager-flow-arrow {
+  padding: 15px;
+  color: #a78bfa;
+  font-size: 26px;
+  text-align: center;
+}
+
+.voyager-video {
+  max-width: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(167, 139, 250, .25);
+  border-radius: 16px;
+  background: #101323;
+  aspect-ratio: 9 / 16;
+}
+
+.voyager-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.voyager-video-link {
+  display: block;
+  margin-top: 20px;
+  color: #67e8f9 !important;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.voyager-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 35px;
+}
+
+.voyager-results div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voyager-results strong {
+  color: #67e8f9;
+  font-size: 27px;
+}
+
+.voyager-results span {
+  color: #a4a4bb;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 850px) {
+  .voyager-screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .voyager-screenshot-grid,
+  .voyager-architecture-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .voyager-screenshot-grid img {
+    height: 380px;
+  }
+
+  .voyager-preview,
+  .voyager-architecture {
+    padding: 15px;
+  }
+
+  .voyager-results {
+    gap: 25px;
+  }
+}
